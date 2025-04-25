@@ -1,0 +1,186 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+p {
+  font-size: 12.8px;
+}
+
+header {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 3px 6px #00000029;
+  margin-bottom: 6px;
+}
+
+header img {
+  width: 100px;
+  margin: 10px;
+}
+
+#acessibilidade {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#acessibilidade span {
+  margin: 0 20px 0 0;
+}
+
+main {
+  width: 100vw;
+  padding: 0px 8px;
+}
+
+#login {
+  width: 340px;
+  padding: 10px;
+  margin: 20px auto;
+  box-shadow: 0 3px 6px #00000029;
+}
+
+h2 {
+  margin: 0 0 40px;
+  font-size: 15px;
+}
+
+#iconText {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  font-size: 12px;
+}
+
+#iconText img {
+  width: 21px;
+}
+
+input {
+  width: 320px;
+  height: 40px;
+  padding: 0 20px 0 20px;
+  background: #FFFFFF 0 0 no-repeat padding-box;
+  border: 1px solid #888888;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+input::placeholder {
+  font-size: 12.8px;
+}
+
+input[type="text"]:focus {
+  background-color: #fffae6;
+}
+
+.btn {
+  background: #1351b4 0 0 no-repeat padding-box;
+  width: 100%;
+  border: none;
+  box-shadow: 0 2px 3px #00000029;
+  border-radius: 24px;
+  font-size: 1em;
+  font-weight: bold;
+  color: #FFFFFF;
+  cursor: pointer;
+  margin: 30px 0;  
+}
+
+#containerOpcoes {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.iconText {
+  display: flex;
+  align-items: center;
+  margin: 20px 0 0 0;
+  cursor: pointer;
+}
+
+.iconText img {
+  margin: 0 10px 0 0;
+  width: 24px;
+}
+
+#contextFooter {
+  margin: 100 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+#contextFooter {
+  margin-left: 10px;
+  color: #1351B4;
+}
+
+#contextFooter img {
+ width: 12.8px;
+}
+
+#etapaTwo {
+  display: none;
+}
+
+#etapaTwo h2 {
+ font-size: 14.976px;
+}
+
+#containerBtns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 30px 0 25px 0;
+}
+
+.btns {
+    width: 145px;
+    height: 40px;
+    border: none;
+    box-shadow: 0 2px 3px #00000029;
+    border-radius: 24px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.mobile {
+  width: 100vw;
+}
+
+/* Exibe conteúdo apenas no mobile */
+@media (min-width: 769px) {
+  .mobile {
+    display: none !important;
+  }
+
+  .desktop {
+    display: block !important;
+  }
+}
+
+/* Exibe conteúdo apenas no mobile */
+@media (max-width: 768px) {
+  .mobile {
+    display: block !important;
+  }
+
+  .desktop {
+    display: none !important;
+  }
+}

